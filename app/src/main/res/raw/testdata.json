@@ -1,0 +1,23 @@
+{
+	"validLogin": {
+		"username": "whiteelephant261",
+		"password": "video"
+	},
+	"invalidLogin": {
+		"username": "invalidUsername",
+		"password": "invalidPassword"
+	},
+	"SearchCriteria": {
+		"shortname": "sa",
+		"fullname": "Sarah Friedrich"
+	},
+	"SarahDriverProfile": {
+		"name": "Sarah Friedrich",
+		"location": "2297 bahnhofstraße",
+		"date": "2013-03-05",
+		"telephone":"tel:0174-8819231"
+	}
+
+
+
+}
