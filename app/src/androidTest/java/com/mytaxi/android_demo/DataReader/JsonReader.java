@@ -12,7 +12,6 @@ import static android.content.ContentValues.TAG;
 public class JsonReader
 {
 	private static JsonParser parser;
-
 	public static JsonObject getJSONResource(Resources resources, int id) {
 		try
 		{

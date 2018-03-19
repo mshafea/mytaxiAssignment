@@ -8,7 +8,7 @@
 		"password": "invalidPassword"
 	},
 	"SearchCriteria": {
-		"shortname": "sa",
+		"searchString": "sa",
 		"fullname": "Sarah Friedrich"
 	},
 	"SarahDriverProfile": {

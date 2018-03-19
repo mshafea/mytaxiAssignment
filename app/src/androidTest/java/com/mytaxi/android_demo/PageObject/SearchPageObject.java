@@ -8,22 +8,19 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
-/**
- * Created by mshafea on 3/17/2018.
- */
 
 public class SearchPageObject extends BasePage{
 
-    public static void searchForDriver(String driverName) {
+    public void searchForDriver(String driverName) {
         waitForTime(3000);
         enterValue(R.id.textSearch,driverName);
     }
 
-    public static void selectFromDisplayedOptions(String fullDriverName) {
+    public void selectFromDisplayedOptions(String fullDriverName) {
         onView(withText(fullDriverName)).inRoot(RootMatchers.isPlatformPopup()).perform(click());
     }
 
-    public static ViewInteraction getTextSearch(){
+    public ViewInteraction getTextSearch(){
         return onView(withId(R.id.textSearch));
     }
 
