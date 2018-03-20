@@ -32,7 +32,7 @@ jobs:
   test_api_v25:
     working_directory: ~/mytaxi
     docker:
-        - image: circleci/android:api-25
+        - image: circleci/android:api-25-alpha
     environment:
       JVM_OPTS: -Xmx3200m
     steps:
@@ -63,3 +63,8 @@ jobs:
           destination: reports
       - store_test_results:
           path: app/build/test-results
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test_api_v25
