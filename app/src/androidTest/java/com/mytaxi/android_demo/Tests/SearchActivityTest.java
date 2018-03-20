@@ -3,6 +3,8 @@ package com.mytaxi.android_demo.Tests;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.support.test.espresso.intent.rule.IntentsTestRule;
+import android.support.test.runner.AndroidJUnit4;
+import android.test.suitebuilder.annotation.LargeTest;
 import android.util.Log;
 import com.google.gson.JsonObject;
 import com.mytaxi.android_demo.DataReader.JsonReader;
@@ -12,6 +14,7 @@ import com.mytaxi.android_demo.R;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import static android.content.ContentValues.TAG;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
@@ -23,6 +26,9 @@ import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
 
+
+@RunWith(AndroidJUnit4.class)
+@LargeTest
 public class SearchActivityTest {
 
     JsonObject jsonObject;

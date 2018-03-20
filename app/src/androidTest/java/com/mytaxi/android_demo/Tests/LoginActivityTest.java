@@ -41,7 +41,7 @@ public class LoginActivityTest {
     }
 
     @Test
-    public void testSuccessfulLOGIN() {
+    public void testSuccessfulLogin() {
         loginHandler = new Login();
         searchPage = new SearchPageObject();
         jsonObject = (JsonObject) JsonReader.getJSONResource(resources,R.raw.testdata ).get("validLogin");
@@ -52,7 +52,7 @@ public class LoginActivityTest {
     }
 
     @Test
-    public void testFailLOGIN() {
+    public void testFailLogin() {
         loginHandler = new Login();
         loginPage = new LoginPageObject();
         jsonObject = (JsonObject) JsonReader.getJSONResource(resources,R.raw.testdata ).get("invalidLogin");
