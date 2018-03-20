@@ -5,7 +5,7 @@
 
 version: 2
 jobs:
-  build:
+  test:
     working_directory: ~/mytaxi
     docker:
       # Android the primary container
@@ -52,3 +52,9 @@ jobs:
           destination: reports
       - store_test_results:
           path: app/build/test-results
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
