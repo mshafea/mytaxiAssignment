@@ -29,7 +29,7 @@ jobs:
           paths:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
-  test_api_v25:
+  test:
     working_directory: ~/mytaxi
     docker:
         - image: circleci/android:api-25-alpha
@@ -67,4 +67,5 @@ workflows:
   version: 2
   test:
     jobs:
-      - test_api_v25
+      - build
+      - test
