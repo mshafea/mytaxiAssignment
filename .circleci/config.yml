@@ -20,6 +20,9 @@ jobs:
           name: Accept licenses
           command: yes | sdkmanager --licenses || true
       - run:
+          name: chmod permissions
+          command: chmod +x ./gradlew
+      - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
       - save_cache:
